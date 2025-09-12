@@ -188,41 +188,72 @@ nav {
 
 @media screen and (max-width: 768px) {
     body {
-        overflow-x: hidden; /* Empêche le scroll horizontal quand le menu est ouvert */
+        overflow-x: hidden;
     }
 
     .nav-links {
-        position: fixed; /* Changé pour fixed pour bien se positionner */
+        position: fixed;
         right: 0px;
         height: 100vh;
         top: 0;
         background-color: var(--blanc);
         box-shadow: -5px 0 15px rgba(0,0,0,0.2);
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* On garde l'empilement vertical */
         align-items: center;
-        justify-content: space-around; /* Pour mieux espacer les liens */
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-         justify-content: space-evenly; /* Répartit les liens équitablement */
-        padding: 0; /* On s'assure qu'il n'y a pas de padding qui gêne */
-    }
-    
-    .nav-links a {
-        color: var(--gris-fonce);
+        padding: 0;
+        margin: 0;
     }
 
+    /* LA CORRECTION EST ICI. On cible les <li> directement */
     .nav-links li {
         opacity: 0;
+        flex-grow: 1; /* Chaque item va grandir pour occuper l'espace vide */
+        width: 100%; /* Chaque item prend toute la largeur du panneau */
+        display: flex; /* On transforme le <li> en conteneur flex... */
+        justify-content: center; /* ...pour centrer son contenu (le <a>) horizontalement... */
+        align-items: center; /* ...et verticalement. */
+    }
+
+    .nav-links a {
+        color: var(--gris-fonce);
+        width: 100%;
+        text-align: center; /* Assure que le texte est bien centré */
     }
 
     .burger {
         display: block;
-        z-index: 1001; /* Pour être sûr qu'il est au-dessus de tout */
+        z-index: 1001;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 }
-
 .nav-active {
     transform: translateX(0%);
 }
