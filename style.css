@@ -92,80 +92,70 @@ nav ul li a:hover {
 }
 
 /* --- Section Accueil --- */
+/* --- Section Accueil --- */
 #accueil {
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    /* --- Styles pour l'image de fond --- */
+    background-image: url('background-accueil.jpg'); /* Votre image ici */
+    background-size: cover; /* L'image couvrira toute la section */
+    background-position: center; /* L'image sera centrée */
+    background-repeat: no-repeat; /* L'image ne se répétera pas */
+    position: relative; /* Pour positionner l'overlay de couleur */
+    color: var(--blanc); /* Texte blanc pour contraster avec le fond */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Ombre pour la lisibilité */
+}
+
+/* --- Overlay pour améliorer le contraste --- */
+#accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Un voile sombre semi-transparent */
+    z-index: 1; /* S'assure que le voile est au-dessus de l'image mais sous le texte */
+}
+
+#accueil .accueil-content {
+    position: relative; /* Pour que le contenu soit au-dessus de l'overlay */
+    z-index: 2;
+    max-width: 800px; /* Limite la largeur du texte pour la lisibilité */
+    padding: 20px;
 }
 
 #accueil h1 {
-    font-size: 3em;
+    font-size: 3.5em; /* L'image permet un titre plus grand */
+    color: var(--blanc); /* Titre blanc */
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--bleu-sim32);
-    color: var(--blanc);
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 50px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+#accueil p {
+    font-size: 1.2em;
+    color: var(--blanc); /* Paragraphe blanc */
 }
 
-.cta-button:hover {
-    background-color: #2563EB;
+/* On modifie le bouton pour qu'il contraste mieux */
+#accueil .cta-button {
+    background-color: var(--vert-sim32); /* Bouton vert pour l'action */
+    color: var(--gris-fonce); /* Texte foncé sur bouton vert */
+    border: 2px solid var(--vert-sim32); /* Bordure assortie */
 }
 
-/* --- Section Services --- */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
+#accueil .cta-button:hover {
+    background-color: #37B96D; /* Vert plus sombre au survol */
+    border-color: #37B96D;
 }
 
-.service-card {
-    background-color: var(--blanc);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    text-align: center;
+/* Modifie aussi les liens de la navigation si l'on est dans la section accueil,
+   pour qu'ils soient blancs et visibles sur l'image */
+header nav ul li a {
+    color: var(--blanc); /* Texte blanc pour les liens de navigation */
 }
-
-.service-card h3 {
-    margin-top: 0;
-    border-bottom: 3px solid var(--vert-sim32);
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* --- Autres sections --- */
-#a-propos, #clients, #contact {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.clients-container {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.client-type {
-    flex: 1;
-}
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
 /* --- Footer --- */
 footer {
     background-color: var(--gris-fonce);
