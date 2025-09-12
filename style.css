@@ -186,6 +186,7 @@ nav {
     transition: all 0.3s ease;
 }
 
+/* --- MENU HAMBURGER RESPONSIVE (VERSION CORRIGÉE FINALE) --- */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -254,6 +255,7 @@ nav {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
 .nav-active {
     transform: translateX(0%);
 }
