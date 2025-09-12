@@ -205,8 +205,10 @@ nav {
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+         justify-content: space-evenly; /* Répartit les liens équitablement */
+        padding: 0; /* On s'assure qu'il n'y a pas de padding qui gêne */
     }
-
+    
     .nav-links a {
         color: var(--gris-fonce);
     }
