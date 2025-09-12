@@ -139,25 +139,29 @@ nav ul li a:hover {
     color: var(--blanc);
 }
 
-/* Version finale du bouton d'accueil */
+/* Nouvelle version du bouton d'accueil */
 #accueil .cta-button {
-    background-color: transparent; /* Fond transparent */
+    background-color: var(--vert-sim32); /* Fond vert uni, comme demandé */
     color: var(--blanc); /* Texte blanc */
+    border: 2px solid var(--vert-sim32); /* Bordure assortie pour un aspect solide */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* L'ombre portée noire sur le texte */
+    
+    /* On garde les autres styles pour la forme premium */
     padding: 12px 32px;
     font-size: 1.1em;
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
-    border: 2px solid var(--vert-sim32); /* Bordure verte */
-    transition: all 0.3s ease; /* Transition douce pour tous les effets */
+    transition: transform 0.2s, background-color 0.2s; /* On garde une transition douce */
 }
 
+/* Pour le survol, je vous propose un effet très subtil pour le retour visuel,
+   tout en respectant votre idée de ne pas avoir de grand changement. */
 #accueil .cta-button:hover {
-    background-color: var(--vert-sim32); /* Le fond devient vert au survol */
-    color: var(--gris-fonce); /* Le texte devient foncé pour contraster */
-    transform: scale(1.05);
+    background-color: #37B96D; /* Un vert juste un peu plus foncé */
+    border-color: #37B96D;
+    transform: scale(1.02); /* Un effet de zoom très léger, moins prononcé qu'avant */
 }
-
 /* --- Sections de contenu (À Propos, Services, Clients, Contact) --- */
 #a-propos, #clients, #contact {
     max-width: 900px;
