@@ -59,12 +59,14 @@ nav {
     padding: 0 20px;
 }
 
+/* Version finale du logo */
 .logo {
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    font-weight: 700;
-    color: var(--bleu-sim32);
+    color: var(--gris-fonce); /* Texte en gris foncé */
+    font-weight: 400; /* Police normale (non grasse) */
+    text-decoration: none; /* Enlève le soulignement */
 }
 
 .logo img {
@@ -78,20 +80,21 @@ nav ul {
     gap: 20px;
 }
 
+/* Version finale des liens de navigation */
 nav ul li a {
-    text-decoration: none;
-    color: var(--gris-fonce);
+    color: var(--gris-fonce); /* Liens foncés par défaut */
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 15px; /* Zone de clic plus grande */
+    transition: color 0.3s;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: var(--gris-clair);
+    color: var(--bleu-sim32); /* Deviennent bleus au survol */
+    background-color: transparent; /* Fond transparent au survol */
 }
 
-/* --- Section Accueil --- */
 /* --- Section Accueil --- */
 #accueil {
     min-height: 80vh;
@@ -99,18 +102,15 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    /* --- Styles pour l'image de fond --- */
-    background-image: url('background-accueil.jpg'); /* Votre image ici */
-    background-size: cover; /* L'image couvrira toute la section */
-    background-position: center; /* L'image sera centrée */
-    background-repeat: no-repeat; /* L'image ne se répétera pas */
-    position: relative; /* Pour positionner l'overlay de couleur */
-    color: var(--blanc); /* Texte blanc pour contraster avec le fond */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Ombre pour la lisibilité */
+    background-image: url('background-accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--blanc);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* --- Overlay pour améliorer le contraste --- */
 #accueil::before {
     content: '';
     position: absolute;
@@ -118,51 +118,90 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Un voile sombre semi-transparent */
-    z-index: 1; /* S'assure que le voile est au-dessus de l'image mais sous le texte */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 #accueil .accueil-content {
-    position: relative; /* Pour que le contenu soit au-dessus de l'overlay */
+    position: relative;
     z-index: 2;
-    max-width: 800px; /* Limite la largeur du texte pour la lisibilité */
+    max-width: 800px;
     padding: 20px;
 }
 
 #accueil h1 {
-    font-size: 3.5em; /* L'image permet un titre plus grand */
-    color: var(--blanc); /* Titre blanc */
+    font-size: 3.5em;
+    color: var(--blanc);
 }
 
 #accueil p {
     font-size: 1.2em;
-    color: var(--blanc); /* Paragraphe blanc */
+    color: var(--blanc);
 }
 
-/* On modifie le bouton pour qu'il contraste mieux */
+/* Version finale du bouton d'accueil */
 #accueil .cta-button {
-    background-color: var(--vert-sim32); /* Bouton vert pour l'action */
-    color: var(--gris-fonce); /* Texte foncé sur bouton vert */
-    border: 2px solid var(--vert-sim32); /* Bordure assortie */
+    background-color: var(--vert-sim32);
+    color: var(--gris-fonce);
+    padding: 12px 32px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 #accueil .cta-button:hover {
-    background-color: #37B96D; /* Vert plus sombre au survol */
-    border-color: #37B96D;
+    background-color: #37B96D;
+    transform: scale(1.05);
 }
 
-/* Modifie aussi les liens de la navigation si l'on est dans la section accueil,
-   pour qu'ils soient blancs et visibles sur l'image */
-header nav ul li a {
-    color: var(--blanc); /* Texte blanc pour les liens de navigation */
-}
-/* --- Footer --- */
-footer {
-    background-color: var(--gris-fonce);
-    color: var(--blanc);
+/* --- Sections de contenu (À Propos, Services, Clients, Contact) --- */
+#a-propos, #clients, #contact {
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
-    padding: 20px;
 }
+
+.clients-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.client-type {
+    flex: 1;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: var(--blanc);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    border-bottom: 3px solid var(--vert-sim32);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 /* --- Section Portfolio --- */
 #portfolio {
     background-color: var(--gris-clair);
@@ -179,7 +218,7 @@ footer {
     background-color: var(--blanc);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    overflow: hidden; /* Pour que l'image respecte les coins arrondis */
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -191,7 +230,7 @@ footer {
 .portfolio-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Assure que l'image couvre la zone sans se déformer */
+    object-fit: cover;
 }
 
 .portfolio-card h3 {
@@ -217,4 +256,12 @@ footer {
     border-radius: 50px;
     margin-right: 5px;
     margin-top: 5px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--gris-fonce);
+    color: var(--blanc);
+    text-align: center;
+    padding: 20px;
 }
