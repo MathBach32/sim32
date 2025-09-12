@@ -141,19 +141,20 @@ nav ul li a:hover {
 
 /* Version finale du bouton d'accueil */
 #accueil .cta-button {
-    background-color: var(--vert-sim32);
-    color: var(--gris-fonce);
+    background-color: transparent; /* Fond transparent */
+    color: var(--blanc); /* Texte blanc */
     padding: 12px 32px;
     font-size: 1.1em;
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
-    border: none;
-    transition: transform 0.2s, background-color 0.2s;
+    border: 2px solid var(--vert-sim32); /* Bordure verte */
+    transition: all 0.3s ease; /* Transition douce pour tous les effets */
 }
 
 #accueil .cta-button:hover {
-    background-color: #37B96D;
+    background-color: var(--vert-sim32); /* Le fond devient vert au survol */
+    color: var(--gris-fonce); /* Le texte devient foncé pour contraster */
     transform: scale(1.05);
 }
 
@@ -264,4 +265,75 @@ footer {
     color: var(--blanc);
     text-align: center;
     padding: 20px;
+}
+
+/* --- CSS POUR LE MENU HAMBURGER RESPONSIVE --- */
+
+/* Style des 3 barres du hamburger */
+.burger {
+    display: none; /* Caché par défaut sur grand écran */
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--gris-fonce);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* C'est ici que tout se joue : la Media Query */
+/* Ces styles ne s'appliqueront que sur les écrans de 768px de large ou moins */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--blanc);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%); /* Cache le menu sur le côté */
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0; /* Cache les liens au début de l'animation */
+    }
+
+    .burger {
+        display: block; /* Affiche le hamburger sur petit écran */
+    }
+}
+
+/* Classe qui sera ajoutée/retirée par JavaScript */
+.nav-active {
+    transform: translateX(0%); /* Fait apparaître le menu */
+}
+
+/* Animation d'apparition des liens */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Animation pour transformer le hamburger en croix */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
