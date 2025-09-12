@@ -173,3 +173,58 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* --- Section Portfolio --- */
+#portfolio {
+    background-color: var(--gris-clair);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-card {
+    background-color: var(--blanc);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden; /* Pour que l'image respecte les coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Assure que l'image couvre la zone sans se déformer */
+}
+
+.portfolio-card h3 {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.portfolio-card p {
+    padding: 0 20px;
+}
+
+.tags {
+    padding: 10px 20px 20px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: var(--gris-clair);
+    color: var(--bleu-sim32);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
