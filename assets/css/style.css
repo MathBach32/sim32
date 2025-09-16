@@ -161,11 +161,11 @@ nav {
 
 
 /* --- Autres sections & Portfolio (pas de changement) --- */
-#a-propos, #clients, #contact, #services, #portfolio {
+#a-propos, #clients, #contact, #services, #creations {
     max-width: 1100px;
     margin: 0 auto;
 }
-.services-grid, .portfolio-grid, .clients-container {
+.services-grid, .creations-grid, .clients-container {
     max-width: 1100px;
     margin: 0 auto;
 }
