@@ -273,11 +273,11 @@ nav {
         display: flex;
         flex-direction: column; /* On garde l'empilement vertical */
         align-items: center;
-        justify-content: flex-start; /* Aligne les items en haut */
+        justify-content: flex-end; /* Aligne les items en bas */
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        padding: 5rem 0 0; /* Ajoute un padding en haut */
+        padding: 0 0 5rem; /* Ajoute un padding en bas */
         margin: 0;
     }
 
