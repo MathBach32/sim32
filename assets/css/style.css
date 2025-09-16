@@ -100,7 +100,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('background-accueil.jpg');
+    background-image: url('../img/background-accueil.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,21 +202,23 @@ nav {
         display: flex;
         flex-direction: column; /* On garde l'empilement vertical */
         align-items: center;
+        justify-content: flex-start; /* Aligne les items en haut */
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        padding: 0;
+        padding: 5rem 0 0; /* Ajoute un padding en haut */
         margin: 0;
     }
 
     /* LA CORRECTION EST ICI. On cible les <li> directement */
     .nav-links li {
         opacity: 0;
-        flex-grow: 1; /* Chaque item va grandir pour occuper l'espace vide */
+        /* flex-grow: 1; a été retiré pour que les liens se regroupent en haut */
         width: 100%; /* Chaque item prend toute la largeur du panneau */
         display: flex; /* On transforme le <li> en conteneur flex... */
         justify-content: center; /* ...pour centrer son contenu (le <a>) horizontalement... */
         align-items: center; /* ...et verticalement. */
+        padding: 1rem 0; /* Ajout d'un espacement pour la lisibilité */
     }
 
     .nav-links a {
