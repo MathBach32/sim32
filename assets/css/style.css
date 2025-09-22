@@ -491,6 +491,63 @@ nav {
     }
 }
 
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--gris-fonce);
+    color: var(--gris-clair);
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column h3 {
+    color: var(--blanc);
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    color: var(--gris-clair);
+    text-decoration: none;
+    transition: color 0.3s;
+    line-height: 2;
+}
+
+.footer-column ul li a:hover {
+    color: var(--bleu-sim32);
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #4B5563; /* Un gris un peu plus clair que le fond */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
 /* --- Page 404 --- */
 .error-container {
     display: flex;
