@@ -100,7 +100,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('../img/background-accueil.jpg');
+    background-image: url('../img/active_support.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -397,5 +397,121 @@ nav {
     .comparison-column {
         width: 90%;
         margin-bottom: 20px;
+    }
+}
+/* --- Trust Banner --- */
+.trust-banner-container {
+    background-color: var(--gris-clair); /* Same as other alternating sections */
+}
+
+#trust-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; /* Reduced padding for a more subtle look */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.trust-icon {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+#trust-banner p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--gris-fonce);
+}
+
+@media screen and (max-width: 768px) {
+    #trust-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* --- Services Section --- */
+.service-card {
+    background-color: var(--blanc);
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-icon {
+    height: 80px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.service-icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.service-icon-group .service-icon {
+    margin-bottom: 0;
+}
+
+/* --- About Section --- */
+.a-propos-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.a-propos-text {
+    flex: 1;
+}
+
+.a-propos-illustrations {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-illustration {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .a-propos-content {
+        flex-direction: column;
+    }
+}
+
+/* --- Contact Section --- */
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-illustration {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-illustration img {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
     }
 }
