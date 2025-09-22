@@ -491,6 +491,32 @@ nav {
     }
 }
 
+/* --- Page 404 --- */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 8vh - 8vh); /* Full height minus header and footer */
+    padding: 20px;
+}
+
+.error-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.error-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    max-width: 600px;
+}
+
+.error-illustration {
+    max-width: 250px;
+    margin-bottom: 2em;
+}
+
 /* --- Contact Section --- */
 .contact-content {
     display: flex;
