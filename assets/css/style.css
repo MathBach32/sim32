@@ -353,3 +353,49 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* --- Section Comparaison --- */
+.comparison-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.comparison-column {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: left;
+}
+
+.comparison-column h3 {
+    color: var(--vert-sim32);
+    border-bottom: 2px solid var(--vert-sim32);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.comparison-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-column ul li {
+    margin-bottom: 10px;
+    color: var(--blanc);
+}
+
+@media screen and (max-width: 768px) {
+    .comparison-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comparison-column {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
