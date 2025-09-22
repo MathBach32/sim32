@@ -443,12 +443,12 @@ nav {
     text-align: center;
 }
 
-.service-icon {
-    height: 80px; /* Adjust size as needed */
+.service-illustration {
+    height: 80px;
     margin-bottom: 15px;
 }
 
-.service-icon-group {
+.service-title-group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,8 +456,10 @@ nav {
     margin-bottom: 15px;
 }
 
-.service-icon-group .service-icon {
-    margin-bottom: 0;
+.service-icon {
+    height: 28px;
+    width: 28px;
+    fill: var(--bleu-sim32);
 }
 
 /* --- About Section --- */
