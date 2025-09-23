@@ -42,12 +42,15 @@ section:nth-child(odd) {
 }
 
 /* --- Header & Navigation --- */
+#header-placeholder {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 header {
     background-color: var(--blanc);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Augmenté pour être au-dessus de tout */
 }
 
 nav {
