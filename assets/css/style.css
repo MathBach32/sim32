@@ -412,11 +412,14 @@ nav {
 }
 /* --- Trust Banner --- */
 #trust-banner {
-    background-color: var(--gris-clair);
-    padding: 20px 0;
+    background-color: var(--blanc); /* Fond blanc pour la section */
+    padding: 60px 20px; /* Consistance avec les autres sections */
 }
 
 #trust-banner .container {
+    background-color: var(--gris-clair); /* Fond gris pour le contenu */
+    border-radius: 8px; /* Bords arrondis */
+    padding: 20px; /* Espacement interne */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -498,6 +501,34 @@ nav {
     .a-propos-content {
         flex-direction: column;
     }
+}
+
+/* --- Responsive Service Cards for large screens --- */
+@media screen and (min-width: 769px) {
+  .service-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .service-card > .service-card-left-column {
+    grid-column: 1;
+  }
+
+  .service-card > p {
+    grid-column: 2;
+  }
+
+  .service-illustration {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-title-group {
+    justify-content: flex-start;
+  }
 }
 
 /* --- Footer --- */
