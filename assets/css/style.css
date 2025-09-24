@@ -103,7 +103,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('../img/active_support.svg');
+    background-image: url('../img/background-accueil.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,6 +160,14 @@ nav {
     background-color: #37B96D;
     border-color: #37B96D;
     transform: scale(1.05);
+}
+
+.illustration-container {
+    margin-top: 20px;
+}
+
+.illustration-container img {
+    max-height: 150px;
 }
 
 
@@ -403,18 +411,16 @@ nav {
     }
 }
 /* --- Trust Banner --- */
-.trust-banner-container {
-    background-color: var(--gris-clair); /* Same as other alternating sections */
+#trust-banner {
+    background-color: var(--gris-clair);
+    padding: 20px 0;
 }
 
-#trust-banner {
+#trust-banner .container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px; /* Reduced padding for a more subtle look */
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .trust-icon {
@@ -430,7 +436,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    #trust-banner {
+    #trust-banner .container {
         flex-direction: column;
         text-align: center;
     }
