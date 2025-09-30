@@ -494,6 +494,47 @@ nav {
     }
 }
 
+/* --- Clients Section --- */
+.clients-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 2em;
+}
+
+.clients-illustration {
+    flex: 1;
+    text-align: center;
+}
+
+.clients-illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.clients-text {
+    flex: 2;
+}
+
+.client-type {
+    margin-bottom: 2em;
+}
+
+.client-type:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .clients-content {
+        flex-direction: column;
+    }
+
+    .clients-illustration {
+        margin-bottom: 2em;
+    }
+}
+
 /* --- Pricing Page --- */
 .pricing-grid {
     display: grid;
