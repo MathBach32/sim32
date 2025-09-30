@@ -494,6 +494,30 @@ nav {
     }
 }
 
+/* --- Questionnaire Page --- */
+#questionnaire fieldset {
+    border: 2px solid var(--bleu-sim32);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--blanc);
+    padding-top: 30px; /* Add space for the legend */
+    position: relative; /* For legend positioning */
+}
+
+#questionnaire legend {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--bleu-sim32);
+    padding: 0 10px; /* Horizontal spacing */
+    background-color: var(--gris-clair); /* Match section background to hide border */
+
+    /* Positioning logic */
+    position: absolute;
+    top: -0.8em; /* Move legend up to sit on the border */
+    left: 20px;  /* Align with fieldset padding */
+}
+
 /* --- Clients Section --- */
 .clients-content {
     display: flex;

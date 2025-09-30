@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Projet Web - SIM32</title>
+    <meta name="description" content="Remplissez ce questionnaire pour nous aider à comprendre vos besoins et à vous proposer un devis personnalisé pour la création de votre site web.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SIM32" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section id="questionnaire">
+            <div class="container">
+                <h1>Questionnaire Projet Web</h1>
+                <p>Ce questionnaire est conçu pour m'aider à comprendre précisément vos attentes et à vous fournir un devis sur mesure. Prenez le temps d'y répondre, plus vos réponses seront précises, plus le devis le sera également.</p>
+
+                <form action="https://formspree.io/f/mzzjrkpe" method="POST">
+
+                    <!-- Q0 - Identifiez-vous -->
+                    <fieldset>
+                        <legend>Q0 - Identifiez-vous</legend>
+                        <label for="last_name">Nom</label>
+                        <input type="text" id="last_name" name="last_name" required>
+
+                        <label for="first_name">Prénom</label>
+                        <input type="text" id="first_name" name="first_name" required>
+
+                        <label for="company">Société</label>
+                        <input type="text" id="company" name="company">
+
+                        <label for="email">Adresse mail</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="activity_description">Bref descriptif de l'activité</label>
+                        <textarea id="activity_description" name="activity_description" rows="4"></textarea>
+
+                        <label for="contact_time">Quand préférez-vous être recontacté ?</label>
+                        <input type="text" id="contact_time" name="contact_time">
+
+                        <label>Comment m'avez-vous connu ?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="source_reco" name="source" value="Recommandation">
+                            <label for="source_reco">Recommandation (Bouche à oreille)</label>
+                            <br>
+                            <input type="radio" id="source_search" name="source" value="Recherche en ligne">
+                            <label for="source_search">Recherche en ligne (Google, etc.)</label>
+                            <br>
+                            <input type="radio" id="source_social" name="source" value="Réseaux Sociaux">
+                            <label for="source_social">Réseaux Sociaux</label>
+                            <br>
+                            <input type="radio" id="source_ad" name="source" value="Publicité locale">
+                            <label for="source_ad">Publicité locale (flyer, etc.)</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Q1 - Objectif principal -->
+                    <fieldset>
+                        <legend>Q1 - Quel est l'objectif principal de votre futur site web ?</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="goal_present" name="project_goal" value="Présenter mon activité">
+                            <label for="goal_present">Présenter mon activité et mes services</label>
+                            <br>
+                            <input type="checkbox" id="goal_sell" name="project_goal" value="Vendre des produits">
+                            <label for="goal_sell">Vendre des produits en ligne</label>
+                            <br>
+                            <input type="checkbox" id="goal_booking" name="project_goal" value="Prise de rendez-vous">
+                            <label for="goal_booking">Permettre aux gens de prendre rendez-vous</label>
+                            <br>
+                            <input type="checkbox" id="goal_blog" name="project_goal" value="Partager des articles">
+                            <label for="goal_blog">Partager des articles de blog</label>
+                            <br>
+                            <input type="checkbox" id="goal_portfolio" name="project_goal" value="Montrer mes réalisations">
+                            <label for="goal_portfolio">Montrer mes réalisations (portfolio)</label>
+                            <br>
+                            <label for="goal_other">Autre :</label>
+                            <input type="text" id="goal_other" name="project_goal_other">
+                        </div>
+                    </fieldset>
+
+                    <!-- Q2 - Audience cible -->
+                    <fieldset>
+                        <legend>Q2 - À qui s'adresse votre site web ? (Votre client idéal)</legend>
+                        <textarea id="target_audience" name="target_audience" rows="4"></textarea>
+                    </fieldset>
+
+                    <!-- Q3 - Actions visiteur -->
+                    <fieldset>
+                        <legend>Q3 - Quelles sont les 3 actions les plus importantes que vous souhaitez que les visiteurs fassent ?</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="action_contact" name="visitor_actions" value="Formulaire de contact">
+                            <label for="action_contact">Remplir un formulaire de contact</label>
+                            <br>
+                            <input type="checkbox" id="action_call" name="visitor_actions" value="Cliquer pour appeler">
+                            <label for="action_call">Cliquer pour appeler</label>
+                            <br>
+                            <input type="checkbox" id="action_buy" name="visitor_actions" value="Acheter un produit">
+                            <label for="action_buy">Acheter un produit</label>
+                            <br>
+                            <input type="checkbox" id="action_download" name="visitor_actions" value="Télécharger une brochure">
+                            <label for="action_download">Télécharger une brochure</label>
+                            <br>
+                            <input type="checkbox" id="action_subscribe" name="visitor_actions" value="S'inscrire à une newsletter">
+                            <label for="action_subscribe">S'inscrire à une newsletter</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Q4 - Pages indispensables -->
+                    <fieldset>
+                        <legend>Q4 - Quelles sont les pages ou sections indispensables pour votre site ?</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="page_home" name="required_pages" value="Accueil">
+                            <label for="page_home">Accueil</label>
+                            <br>
+                            <input type="checkbox" id="page_about" name="required_pages" value="À propos">
+                            <label for="page_about">À propos</label>
+                            <br>
+                            <input type="checkbox" id="page_services" name="required_pages" value="Services/Produits">
+                            <label for="page_services">Mes Services/Produits</label>
+                            <br>
+                            <input type="checkbox" id="page_pricing" name="required_pages" value="Tarifs">
+                            <label for="page_pricing">Tarifs</label>
+                            <br>
+                            <input type="checkbox" id="page_portfolio" name="required_pages" value="Réalisations">
+                            <label for="page_portfolio">Réalisations</label>
+                            <br>
+                            <input type="checkbox" id="page_blog" name="required_pages" value="Blog">
+                            <label for="page_blog">Blog</label>
+                            <br>
+                            <input type="checkbox" id="page_contact" name="required_pages" value="Contact">
+                            <label for="page_contact">Contact</label>
+                            <br>
+                            <label for="page_other">Autres :</label>
+                            <input type="text" id="page_other" name="required_pages_other">
+                        </div>
+                    </fieldset>
+
+                    <!-- Q5 - Contenu prêt -->
+                    <fieldset>
+                        <legend>Q5 - Avez-vous déjà préparé le contenu (textes, images) pour votre site ?</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="content_yes" name="content_ready" value="Oui">
+                            <label for="content_yes">Oui</label>
+                            <br>
+                            <input type="radio" id="content_no" name="content_ready" value="Non">
+                            <label for="content_no">Non</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Q6 - Exemples de sites -->
+                    <fieldset>
+                        <legend>Q6 - Avez-vous des exemples de sites web que vous aimez (ou n'aimez pas) ?</legend>
+                        <label for="example_url_1">Exemple 1 (URL)</label>
+                        <input type="text" id="example_url_1" name="example_url_1">
+                        <label for="example_desc_1">Ce que vous aimez / n'aimez pas</label>
+                        <textarea id="example_desc_1" name="example_desc_1" rows="2"></textarea>
+                        <hr>
+                        <label for="example_url_2">Exemple 2 (URL)</label>
+                        <input type="text" id="example_url_2" name="example_url_2">
+                        <label for="example_desc_2">Ce que vous aimez / n'aimez pas</label>
+                        <textarea id="example_desc_2" name="example_desc_2" rows="2"></textarea>
+                        <hr>
+                        <label for="example_url_3">Exemple 3 (URL)</label>
+                        <input type="text" id="example_url_3" name="example_url_3">
+                        <label for="example_desc_3">Ce que vous aimez / n'aimez pas</label>
+                        <textarea id="example_desc_3" name="example_desc_3" rows="2"></textarea>
+                    </fieldset>
+
+                    <!-- Q7 - Identité visuelle -->
+                    <fieldset>
+                        <legend>Q7 - Avez-vous déjà un logo et des couleurs pour votre marque ?</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="branding_yes" name="has_branding" value="Oui">
+                            <label for="branding_yes">Oui</label>
+                            <br>
+                            <input type="radio" id="branding_no" name="has_branding" value="Non">
+                            <label for="branding_no">Non</label>
+                        </div>
+                        <div id="branding_help_container" style="display:none; margin-top: 10px;">
+                            <input type="checkbox" id="branding_help_logo" name="branding_help" value="Aide création logo">
+                            <label for="branding_help_logo">M'aider à créer un logo</label>
+                            <br>
+                            <input type="checkbox" id="branding_help_chart" name="branding_help" value="Aide charte graphique">
+                            <label for="branding_help_chart">M'aider à créer une charte graphique complète</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Q8 - Point unique -->
+                    <fieldset>
+                        <legend>Q8 - Qu'est-ce qui rend votre activité, vos produits ou services uniques ?</legend>
+                        <textarea id="unique_selling_point" name="unique_selling_point" rows="4"></textarea>
+                    </fieldset>
+
+                    <!-- Q9 - Nom de domaine -->
+                    <fieldset>
+                        <legend>Q9 - Possédez-vous déjà un nom de domaine (ex: www.monsite.fr) ?</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="domain_yes" name="has_domain" value="Oui">
+                            <label for="domain_yes">Oui</label>
+                            <br>
+                            <input type="radio" id="domain_no" name="has_domain" value="Non">
+                            <label for="domain_no">Non</label>
+                        </div>
+                        <div id="domain_name_container" style="display:none; margin-top: 10px;">
+                            <label for="domain_name">Quel est votre nom de domaine ?</label>
+                            <input type="text" id="domain_name" name="domain_name">
+                        </div>
+                    </fieldset>
+
+                    <!-- Q10 - Évolution future -->
+                    <fieldset>
+                        <legend>Q10 - Comment imaginez-vous l'évolution de votre site à l'avenir ?</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="evo_shop" name="future_evolution" value="Ajouter boutique">
+                            <label for="evo_shop">Ajouter une boutique en ligne</label>
+                            <br>
+                            <input type="checkbox" id="evo_booking" name="future_evolution" value="Ajouter réservation">
+                            <label for="evo_booking">Ajouter une section de réservation</label>
+                            <br>
+                            <input type="checkbox" id="evo_client" name="future_evolution" value="Ajouter espace client">
+                            <label for="evo_client">Ajouter un espace client</label>
+                            <br>
+                            <input type="checkbox" id="evo_blog" name="future_evolution" value="Créer section blog">
+                            <label for="evo_blog">Créer une section blog / actualités</label>
+                            <br>
+                            <label for="evo_other">Autre :</label>
+                            <input type="text" id="evo_other" name="future_evolution_other">
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="cta-button">Envoyer ma demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Logic for Q7 (Branding)
+            const brandingRadios = document.querySelectorAll('input[name="has_branding"]');
+            const brandingHelpContainer = document.getElementById('branding_help_container');
+            brandingRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'Non') {
+                        brandingHelpContainer.style.display = 'block';
+                    } else {
+                        brandingHelpContainer.style.display = 'none';
+                    }
+                });
+            });
+
+            // Logic for Q9 (Domain)
+            const domainRadios = document.querySelectorAll('input[name="has_domain"]');
+            const domainNameContainer = document.getElementById('domain_name_container');
+            domainRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'Oui') {
+                        domainNameContainer.style.display = 'block';
+                    } else {
+                        domainNameContainer.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
