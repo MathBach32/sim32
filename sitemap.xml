@@ -7,27 +7,37 @@
 
 <url>
   <loc>https://www.sim32.fr/</loc>
-  <lastmod>2024-03-22T10:00:00+00:00</lastmod>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.sim32.fr/creations.html</loc>
-  <lastmod>2024-03-22T10:00:00+00:00</lastmod>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sim32.fr/tarifs.html</loc>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.sim32.fr/mentions-legales.html</loc>
-  <lastmod>2024-03-22T10:00:00+00:00</lastmod>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>https://www.sim32.fr/cgv.html</loc>
-  <lastmod>2024-03-22T10:00:00+00:00</lastmod>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.sim32.fr/cgu.html</loc>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>https://www.sim32.fr/confidentialite.html</loc>
-  <lastmod>2024-03-22T10:00:00+00:00</lastmod>
+  <lastmod>2025-09-23T10:00:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 
