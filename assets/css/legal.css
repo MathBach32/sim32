@@ -1,0 +1,36 @@
+/* Styles pour les pages légales (CGU, CGV, Mentions Légales, Confidentialité) */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--gris-fonce);
+    background-color: #fff;
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.legal-container h1,
+.legal-container h2,
+.legal-container h3,
+.legal-container p,
+.legal-container li,
+.legal-container strong {
+    color: var(--gris-fonce) !important; /* Utiliser !important pour surcharger les styles de base si nécessaire */
+}
+
+.legal-container a {
+    color: var(--gris-fonce);
+    text-decoration: underline;
+}
+
+.legal-container a:hover {
+    text-decoration: none;
+}
+
+/* On s'assure qu'aucun autre style de couleur n'est appliqué */
+.legal-container * {
+    color: var(--gris-fonce) !important;
+}
