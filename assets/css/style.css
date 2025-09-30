@@ -495,98 +495,31 @@ nav {
 }
 
 /* --- Questionnaire Page --- */
-#questionnaire {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-#questionnaire form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
 
 #questionnaire fieldset {
-    border: 1px solid #E5E7EB;
+    border: 2px solid var(--bleu-sim32);
     border-radius: 8px;
     padding: 20px;
+    margin-bottom: 30px;
     background-color: var(--blanc);
+    padding-top: 30px; /* Add space for the legend */
+    position: relative; /* For legend positioning */
+
 }
 
 #questionnaire legend {
     font-size: 1.4em;
     font-weight: 600;
     color: var(--bleu-sim32);
-    padding: 0 10px;
-    margin-left: 10px;
-}
 
-#questionnaire label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: var(--gris-fonce);
-}
+    padding: 0 10px; /* Horizontal spacing */
+    background-color: var(--gris-clair); /* Match section background to hide border */
 
-#questionnaire input[type="text"],
-#questionnaire input[type="email"],
-#questionnaire input[type="tel"],
-#questionnaire textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #D1D5DB;
-    border-radius: 6px;
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box; /* Important for padding and width */
-    margin-bottom: 15px;
-}
+    /* Positioning logic */
+    position: absolute;
+    top: -0.8em; /* Move legend up to sit on the border */
+    left: 20px;  /* Align with fieldset padding */
 
-#questionnaire textarea {
-    resize: vertical;
-}
-
-#questionnaire .radio-group,
-#questionnaire .checkbox-group {
-    margin-top: 10px;
-}
-
-#questionnaire .radio-group input,
-#questionnaire .checkbox-group input {
-    margin-right: 10px;
-}
-
-#questionnaire .radio-group label,
-#questionnaire .checkbox-group label {
-    display: inline-block;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-#questionnaire hr {
-    border: none;
-    border-top: 1px solid #E5E7EB;
-    margin: 20px 0;
-}
-
-#questionnaire button[type="submit"] {
-    background-color: var(--vert-sim32);
-    color: var(--gris-fonce);
-    border: none;
-    padding: 15px 35px;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
-    align-self: center;
-    transition: transform 0.2s, background-color 0.2s;
-    margin-top: 20px;
-}
-
-#questionnaire button[type="submit"]:hover {
-    background-color: #37B96D;
-    transform: scale(1.05);
 }
 
 /* --- Clients Section --- */
