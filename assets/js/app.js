@@ -37,14 +37,25 @@ const loadComponent = (selector, url) => {
         .catch(error => console.error(error));
 };
 
+// --- Fonction pour l'Easter Egg ---
+const easterEgg = () => {
+    const trigger = document.getElementById('easter-egg-trigger');
+    if (trigger) {
+        trigger.addEventListener('click', () => {
+            window.open('easter-egg.html', '_blank');
+        });
+    }
+};
+
 // --- Point d'entrée principal ---
 document.addEventListener('DOMContentLoaded', async () => {
     // Grace au "return", await va maintenant correctement attendre la fin du chargement
     await loadComponent('#header-placeholder', '_includes/_header.html');
     
     // On charge le footer (pas besoin d'attendre la fin de celui-ci)
-    loadComponent('#footer-placeholder', '_includes/_footer.html');
+    await loadComponent('#footer-placeholder', '_includes/_footer.html');
 
     // Cette fonction ne sera appelée que lorsque le header sera bien présent dans la page
     navSlide();
+    easterEgg();
 });
