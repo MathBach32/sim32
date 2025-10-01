@@ -551,6 +551,10 @@ nav {
 
 /* --- Questionnaire Page --- */
 
+#questionnaire {
+    background-color: var(--gris-clair);
+}
+
 #questionnaire fieldset {
     border: 2px solid var(--bleu-sim32);
     border-radius: 8px;
@@ -577,9 +581,25 @@ nav {
     width: auto;
 }
 
-#questionnaire textarea {
-    min-height: 80px; /* Equivalent to rows=4 */
-    resize: vertical; /* Allow vertical resize, disable horizontal */
+#questionnaire textarea,
+#questionnaire input[type="text"],
+#questionnaire input[type="email"],
+#questionnaire input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important */
+    margin-bottom: 10px;
+}
+
+#questionnaire .option-item {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#questionnaire .submit-container {
+    text-align: center;
 }
 
 /* --- Clients Section --- */
