@@ -572,7 +572,7 @@ nav {
     color: var(--bleu-sim32);
     padding: 0 10px;
     margin-left: 20px; /* Aligns with fieldset's padding */
-    background-color: var(--gris-clair); /* Same as section background */
+    background-color: var(--blanc); /* Same as section background */
     transform: translateY(-50%); /* Sits perfectly on the line */
     position: relative;
     top: 0;
