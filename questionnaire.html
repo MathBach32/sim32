@@ -42,18 +42,22 @@
                         <label for="company">Société</label>
                         <input type="text" id="company" name="company">
 
+                        <hr>
                         <label for="email">Adresse mail</label>
                         <input type="email" id="email" name="email" required>
 
                         <label for="phone">Numéro de téléphone</label>
                         <input type="tel" id="phone" name="phone">
 
+                        <hr>
                         <label for="activity_description">Bref descriptif de l'activité</label>
                         <textarea id="activity_description" name="activity_description" rows="4"></textarea>
 
+                        <hr>
                         <label for="contact_time">Quand préférez-vous être recontacté ?</label>
                         <input type="text" id="contact_time" name="contact_time">
 
+                        <hr>
                         <label>Comment m'avez-vous connu ?</label>
                         <div class="radio-group">
                             <input type="radio" id="source_reco" name="source" value="Recommandation">
@@ -281,6 +285,18 @@
                     }
                 });
             });
+
+            // Logic for Textarea Auto-Resize
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(textarea => {
+                textarea.setAttribute('style', 'height:' + (textarea.scrollHeight) + 'px;overflow-y:hidden;');
+                textarea.addEventListener("input", OnInput, false);
+            });
+
+            function OnInput() {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            }
         });
     </script>
 </body>
