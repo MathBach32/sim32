@@ -585,24 +585,14 @@ section#questionnaire {
     padding: 20px;
     margin-bottom: 30px;
     background-color: var(--gris-clair);
-    padding-top: 30px; /* Add space for the legend */
-    position: relative; /* For legend positioning */
-
 }
 
 #questionnaire legend {
     font-size: 1.4em;
     font-weight: 600;
     color: var(--bleu-sim32);
-    padding: 0 10px;
-    margin-left: 20px; /* Aligns with fieldset's padding */
-    background-color: var(--blanc); /* Same as section background */
-    transform: translateY(-50%); /* Sits perfectly on the line */
-    position: relative;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: auto;
+    padding: 0;
+    margin-bottom: 15px; /* Add space below the legend */
 }
 
 #questionnaire textarea,
@@ -626,20 +616,6 @@ section#questionnaire {
     text-align: center;
 }
 
-/* --- Responsive Questionnaire --- */
-@media screen and (max-width: 768px) {
-    #questionnaire legend {
-        transform: none;
-        position: static;
-        margin-left: 0;
-        margin-bottom: 15px; /* Add space below the legend */
-        background-color: transparent; /* Reset background */
-    }
-
-    #questionnaire fieldset {
-        padding-top: 20px; /* Reset padding */
-    }
-}
 
 /* --- Clients Section --- */
 .clients-content {
@@ -718,6 +694,13 @@ section#questionnaire {
     font-weight: 700;
     color: var(--gris-fonce);
     margin-bottom: 20px;
+}
+
+.pricing-card .old-price {
+    color: #6B7280; /* gris moyen */
+    text-decoration: line-through;
+    font-size: 0.6em;
+    margin-left: 10px;
 }
 
 .pricing-card .description {
