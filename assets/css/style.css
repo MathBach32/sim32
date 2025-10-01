@@ -141,7 +141,7 @@ nav {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-#accueil .cta-button {
+.cta-button {
     background-color: var(--vert-sim32);
     color: var(--gris-fonce);
     border: 2px solid var(--vert-sim32);
@@ -153,10 +153,11 @@ nav {
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
-    transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+    cursor: pointer;
 }
 
-#accueil .cta-button:hover {
+.cta-button:hover {
     background-color: #37B96D;
     border-color: #37B96D;
     transform: scale(1.05);
@@ -511,15 +512,20 @@ nav {
     font-size: 1.4em;
     font-weight: 600;
     color: var(--bleu-sim32);
+    padding: 0 10px;
+    margin-left: 20px; /* Aligns with fieldset's padding */
+    background-color: var(--gris-clair); /* Same as section background */
+    transform: translateY(-50%); /* Sits perfectly on the line */
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: auto;
+}
 
-    padding: 0 10px; /* Horizontal spacing */
-    background-color: var(--gris-clair); /* Match section background to hide border */
-
-    /* Positioning logic */
-    position: absolute;
-    top: -0.8em; /* Move legend up to sit on the border */
-    left: 20px;  /* Align with fieldset padding */
-
+#questionnaire textarea {
+    min-height: 80px; /* Equivalent to rows=4 */
+    resize: vertical; /* Allow vertical resize, disable horizontal */
 }
 
 /* --- Clients Section --- */
@@ -615,26 +621,6 @@ nav {
     margin-right: auto;
 }
 
-#website-creation-quote .cta-button {
-    background-color: var(--vert-sim32);
-    color: var(--gris-fonce);
-    border: 2px solid var(--vert-sim32);
-    text-shadow: none;
-    padding: 12px 32px;
-    font-size: 1.1em;
-    font-weight: 700;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-#website-creation-quote .cta-button:hover {
-    background-color: #37B96D;
-    border-color: #37B96D;
-    transform: scale(1.05);
-}
 
 #pricing-intro h1, #website-creation-quote h2 {
     text-align: center;
