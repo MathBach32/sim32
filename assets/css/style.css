@@ -538,6 +538,7 @@ nav {
     margin-bottom: 20px;
     border: 5px solid var(--bleu-sim32);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    object-position : 50% 32%;
 }
 
 .easter-egg-caption {
