@@ -696,7 +696,7 @@ section#questionnaire {
     margin-bottom: 20px;
 }
 
-.pricing-card .old-price {
+.pricing-card .tax-included {
     color: #6B7280; /* gris moyen */
     text-decoration: line-through;
     font-size: 0.6em;
