@@ -552,7 +552,7 @@ nav {
 /* --- Questionnaire Page --- */
 
 #questionnaire {
-    background-color: var(--gris-clair);
+    background-color: var(--blanc);
 }
 
 #questionnaire fieldset {
@@ -560,7 +560,7 @@ nav {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: var(--blanc);
+    background-color: var(--gris-clair);
     padding-top: 30px; /* Add space for the legend */
     position: relative; /* For legend positioning */
 
