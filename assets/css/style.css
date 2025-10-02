@@ -523,6 +523,87 @@ nav {
     }
 }
 
+/* --- Tarteaucitron Custom Styles --- */
+
+/* Main banner */
+#tarteaucitronRoot #tarteaucitronAlert,
+#tarteaucitronRoot #tarteaucitronAlertBig {
+    background-color: var(--gris-fonce) !important;
+    color: var(--blanc) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAlert #tarteaucitronDisclaimerAlert {
+    color: var(--blanc) !important;
+}
+
+/* Common style for buttons */
+#tarteaucitronRoot .tarteaucitronButton {
+    border-radius: 50px !important;
+    padding: 10px 24px !important;
+    font-weight: 700 !important;
+    transition: transform 0.2s, background-color 0.2s !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+#tarteaucitronRoot .tarteaucitronButton:hover {
+    transform: scale(1.05) !important;
+}
+
+/* "Accept all" button */
+#tarteaucitronRoot #tarteaucitronAll {
+    background-color: var(--vert-sim32) !important;
+    color: var(--gris-fonce) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAll:hover {
+    background-color: #37B96D !important;
+}
+
+/* "Deny all" button */
+#tarteaucitronRoot #tarteaucitronDeny {
+    background-color: #6B7280 !important; /* Medium gray */
+    color: var(--blanc) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronDeny:hover {
+    background-color: #4B5563 !important; /* Darker gray */
+}
+
+/* "Personalize" button */
+#tarteaucitronRoot #tarteaucitronClosePanel {
+    background-color: transparent !important;
+    color: var(--blanc) !important;
+    text-decoration: underline !important;
+    font-weight: normal !important;
+    padding: 10px !important;
+}
+
+/* --- Panel Styles --- */
+#tarteaucitronRoot #tarteaucitronPanel {
+    background: var(--blanc) !important;
+    color: var(--gris-fonce) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronPanel #tarteaucitronPanelHeader h2 {
+    color: var(--bleu-sim32) !important;
+    font-size: 1.5em !important;
+}
+
+#tarteaucitronRoot #tarteaucitronPanel .tarteaucitronLine .tarteaucitronName {
+    font-weight: 600 !important;
+}
+
+#tarteaucitronRoot #tarteaucitronPanel .tarteaucitronH3 {
+    color: var(--bleu-sim32) !important;
+}
+
+/* --- Little Icon --- */
+#tarteaucitronRoot #tarteaucitronIcon {
+    background-color: var(--bleu-sim32) !important;
+    border-radius: 50% !important;
+}
+
 /* --- Legal Pages --- */
 .legal-page h1,
 .legal-page h2,
