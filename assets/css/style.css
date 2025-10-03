@@ -525,11 +525,86 @@ nav {
 
 /* --- Tarteaucitron Custom Styles --- */
 
-/* Main banner */
+/* Main banner container */
 #tarteaucitronRoot #tarteaucitronAlert,
 #tarteaucitronRoot #tarteaucitronAlertBig {
-    background-color: var(--gris-fonce) !important;
+    background-color: var(--gris-clair) !important;
+    color: var(--gris-fonce) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Icon style */
+#tarteaucitronRoot #tarteaucitronAlertBig::before {
+    color: var(--gris-fonce) !important; /* Ensure icon is visible on light background */
+    font-size: 35px !important; /* Keep original size */
+    margin-bottom: 15px !important; /* Add space between icon and text */
+    display: block !important; /* Ensure it's on its own line */
+    text-align: center !important;
+}
+
+/* Text within the banner */
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronDisclaimerAlert {
+    color: var(--gris-fonce) !important;
+}
+
+/* Common style for main buttons */
+#tarteaucitronRoot #tarteaucitronAlertBig .tarteaucitronButton,
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronCloseAlert {
+    border-radius: 50px !important;
+    padding: 10px 24px !important;
+    font-weight: 700 !important;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig .tarteaucitronButton:hover,
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronCloseAlert:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* "Tout accepter" button (ID is #tarteaucitronPersonalize2) */
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronPersonalize2 {
+    background-color: var(--vert-sim32) !important;
+    color: var(--gris-fonce) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronPersonalize2:hover {
+    background-color: #37B96D !important; /* Darker green */
+}
+
+/* "Tout refuser" button (ID is #tarteaucitronAllDenied2) */
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronAllDenied2 {
+    background-color: var(--bleu-sim32) !important;
     color: var(--blanc) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronAllDenied2:hover {
+    background-color: #2563EB !important; /* Darker blue */
+}
+
+/* "Personnaliser" button (ID is #tarteaucitronCloseAlert) */
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronCloseAlert {
+    background-color: var(--blanc) !important;
+    color: var(--gris-fonce) !important;
+    border: 1px solid #ccc !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronCloseAlert:hover {
+    background-color: #F0F0F0 !important; /* Slightly grayer on hover */
+}
+
+/* Privacy policy link/button (ID is #tarteaucitronPrivacyUrl) */
+#tarteaucitronRoot #tarteaucitronAlertBig #tarteaucitronPrivacyUrl {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+    text-decoration: underline !important;
+    color: var(--bleu-sim32) !important;
+    font-weight: normal !important;
 }
 
 #tarteaucitronRoot #tarteaucitronAlert #tarteaucitronDisclaimerAlert {
