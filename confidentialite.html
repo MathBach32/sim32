@@ -56,16 +56,20 @@ tarteaucitron.init({
   "partnersList": true
 });
 
-// Google Analytics (GA4)
-tarteaucitron.user.gtagId = 'G-XXXXXXXXXX'; // Mettre l'ID Google Analytics ici
-(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+// Google Tag Manager
+tarteaucitron.user.googletagmanagerId = 'GTM-NHCGHJW5';
+(tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
 
 // HubSpot
-tarteaucitron.user.hubspotId = 'XXXXXXXX'; // Mettre l'ID HubSpot ici
+tarteaucitron.user.hubspotId = '146922861';
 (tarteaucitron.job = tarteaucitron.job || []).push('hubspot');
 
+// Google AdSense
+tarteaucitron.user.adsenseClientId = 'ca-pub-3889972443604874';
+(tarteaucitron.job = tarteaucitron.job || []).push('adsense');
+
 // Microsoft Clarity
-tarteaucitron.user.clarityId = 'XXXXXXXXXX'; // Mettre l'ID Clarity ici
+tarteaucitron.user.clarityId = 'tkcqmxyhgp';
 (tarteaucitron.job = tarteaucitron.job || []).push('clarity');
 </script>
     <meta charset="UTF-8">
@@ -165,6 +169,16 @@ tarteaucitron.user.clarityId = 'XXXXXXXXXX'; // Mettre l'ID Clarity ici
                 <li><strong>Google Chrome :</strong> <a href="https://support.google.com/chrome/answer/95647?hl=fr" target="_blank" rel="noopener noreferrer">Contrôler les cookies</a></li>
             </ul>
             <p>Pour obtenir plus d’information sur les cookies, vous pouvez consulter le site internet de la CNIL : <a href="https://www.cnil.fr/fr/site-web-cookies-et-autres-traceurs" target="_blank" rel="noopener noreferrer">https://www.cnil.fr/fr/site-web-cookies-et-autres-traceurs</a>.</p>
+
+            <h3>5.5 Services tiers et cookies utilisés</h3>
+            <p>Notre site utilise les services tiers suivants, qui peuvent déposer des cookies sur votre navigateur sous réserve de votre consentement :</p>
+            <ul>
+                <li><strong>Google Analytics / Google Tag Manager :</strong> Ces services nous permettent de mesurer l'audience de notre site de manière anonyme pour comprendre comment il est utilisé et améliorer l'expérience des visiteurs.</li>
+                <li><strong>HubSpot :</strong> Cet outil nous aide à gérer la relation avec nos clients et prospects, notamment via les formulaires de contact.</li>
+                <li><strong>Google AdSense :</strong> Ce service est utilisé pour afficher des bannières publicitaires pertinentes sur le site.</li>
+                <li><strong>Microsoft Clarity :</strong> Cet outil nous permet d'analyser l'expérience utilisateur en générant des cartes de chaleur et des enregistrements de session anonymisés pour identifier et corriger les problèmes d'ergonomie.</li>
+            </ul>
+            <p>Pour chaque service, vous pouvez accepter ou refuser le dépôt de cookies à tout moment via le panneau de gestion accessible en cliquant sur l'icône en bas de page.</p>
 
             <h2>6. Quels sont vos droits ?</h2>
             <p>Vous êtes seuls à nous avoir communiqué les données en notre possession, par l’intermédiaire du Site. Vous disposez de droits sur vos données à caractère personnel. Conformément à la réglementation en matière de protection des données à caractère personnel, notamment les articles 15 à 22 du RGPD, et après avoir justifié de votre identité, vous avez le droit de nous demander l'accès aux données à caractère personnel vous concernant, la rectification ou l'effacement de celles-ci.</p>
