@@ -24,7 +24,7 @@ tarteaucitron.init({
   "closePopup": true,
 
   "showIcon": true,
-  "iconPosition": "BottomRight",
+  "iconPosition": "BottomLeft",
 
   "adblocker": false,
 
@@ -55,6 +55,18 @@ tarteaucitron.init({
 
   "partnersList": true
 });
+
+// Google Analytics (GA4)
+tarteaucitron.user.gtagId = 'G-XXXXXXXXXX'; // Mettre l'ID Google Analytics ici
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+
+// HubSpot
+tarteaucitron.user.hubspotId = 'XXXXXXXX'; // Mettre l'ID HubSpot ici
+(tarteaucitron.job = tarteaucitron.job || []).push('hubspot');
+
+// Microsoft Clarity
+tarteaucitron.user.clarityId = 'XXXXXXXXXX'; // Mettre l'ID Clarity ici
+(tarteaucitron.job = tarteaucitron.job || []).push('clarity');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
