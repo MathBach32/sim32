@@ -604,6 +604,65 @@ nav {
     border-radius: 50% !important;
 }
 
+/* Panel close button 'x' */
+#tarteaucitronRoot #tarteaucitron #tarteaucitronClosePanel {
+    top: 10px !important;
+    right: 15px !important;
+    font-size: 2em !important;
+    line-height: 1 !important;
+    color: var(--gris-fonce) !important;
+    background: none !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    position: absolute !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+}
+#tarteaucitronRoot #tarteaucitron #tarteaucitronClosePanel:before {
+    content: '×';
+}
+
+/* Service description text */
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronDescription {
+    font-style: italic;
+    color: #6B7280;
+    margin-top: 5px;
+}
+
+/* Service-level Allow/Deny buttons (the "switches") */
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronAllow,
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronDeny {
+    border-radius: 50px !important;
+    padding: 6px 14px !important;
+    font-size: 0.9em !important;
+    font-weight: 600 !important;
+    transition: transform 0.2s, background-color 0.2s !important;
+    border: none !important;
+    cursor: pointer;
+    margin-left: 5px !important;
+}
+
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronAllow {
+    background-color: var(--vert-sim32) !important;
+    color: var(--gris-fonce) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronAllow:hover {
+    background-color: #37B96D !important;
+    transform: scale(1.05);
+}
+
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronDeny {
+    background-color: #6B7280 !important;
+    color: var(--blanc) !important;
+}
+
+#tarteaucitronRoot #tarteaucitronServices .tarteaucitronDeny:hover {
+    background-color: #4B5563 !important;
+    transform: scale(1.05);
+}
+
 /* --- Legal Pages --- */
 .legal-page h1,
 .legal-page h2,
