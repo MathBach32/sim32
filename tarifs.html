@@ -56,16 +56,20 @@ tarteaucitron.init({
   "partnersList": true
 });
 
-// Google Analytics (GA4)
-tarteaucitron.user.gtagId = 'G-XXXXXXXXXX'; // Mettre l'ID Google Analytics ici
-(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+// Google Tag Manager
+tarteaucitron.user.googletagmanagerId = 'GTM-NHCGHJW5';
+(tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
 
 // HubSpot
-tarteaucitron.user.hubspotId = 'XXXXXXXX'; // Mettre l'ID HubSpot ici
+tarteaucitron.user.hubspotId = '146922861';
 (tarteaucitron.job = tarteaucitron.job || []).push('hubspot');
 
+// Google AdSense
+tarteaucitron.user.adsenseClientId = 'ca-pub-3889972443604874';
+(tarteaucitron.job = tarteaucitron.job || []).push('adsense');
+
 // Microsoft Clarity
-tarteaucitron.user.clarityId = 'XXXXXXXXXX'; // Mettre l'ID Clarity ici
+tarteaucitron.user.clarityId = 'tkcqmxyhgp';
 (tarteaucitron.job = tarteaucitron.job || []).push('clarity');
 </script>
     <meta charset="UTF-8">
